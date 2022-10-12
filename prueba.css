@@ -1,0 +1,200 @@
+body {
+    min-width: 630px;
+}
+
+#container {
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+#container .column {
+    position: relative;
+    float: left;
+}
+
+#center {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Tocar cosas */
+
+#flex-container {
+    display: flex;
+}
+
+#caja1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsla(157, 63%, 84%, 1);
+}
+#caja2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsla(78, 63%, 84%, 1);
+}
+#caja3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsla(125, 63%, 84%, 1);
+}
+#cajita1 {
+    width: 300px;
+    border: 5px solid green;
+    padding: 10px;
+    margin: 2px;
+}
+#cajita2 {
+    width: 300px;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 2px;
+}
+#cajita3 {
+    width: 300px;
+    border: 5px solid red;
+    padding: 10px;
+    margin: 2px;
+}
+#contacto {
+    display: inline-block;
+    align-items: center;
+    text-align: right;
+    margin-right: 2%;
+    margin-left: 10%;
+}
+#copyright {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 5%;
+
+}
+#logos{
+    display: inline-block;
+    text-align: left;
+    margin-right: 2%;
+    margin-left: 2.5%;
+
+}
+footer {
+    background-color: hsla(79, 51%, 66%, 1);
+    font-size: 0.6rem;
+}
+
+/* Tocar cosas */
+
+#left {
+    width: 180px;
+    padding: 0 10px;
+    right: 240px;
+    margin-left: -100%;
+}
+
+#right {
+    width: 130px;
+    padding: 0 10px;
+    margin-right: -100%;
+}
+
+* html #left {
+    left: 150px;
+}
+
+nav {
+    text-align: center;
+    margin: 5px 2px 2px 5px;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(95, 140, 224);
+    color:hsla(79, 51%, 66%, 1);
+}
+
+#margen {
+    margin-left: 3px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+    overflow: hidden;
+}
+
+#container .column {
+    padding-bottom: 1001em;
+    margin-bottom: -1000em;
+}
+
+/* Fix for the footer */
+* html body {
+    overflow: hidden;
+}
+
+* html #footer-wrapper {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10010px;
+    margin-bottom: -10000px;
+    background: #fff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+    line-height: 1.5em;
+}
+
+p {
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: rgba(0, 100, 0, 0.445);
+    text-decoration: none;
+}
+
+#header, #footer {
+    font-size: large;
+    padding: 0.3em;
+    background: #7ebbb3;
+}
+
+#left {
+    background: #DAE9BC;
+}
+
+#right {
+    background: #0bb39c;
+}
+
+#center {
+    background: #fff;
+}
+
+#container .column {
+    padding-top: 1em;
+}
