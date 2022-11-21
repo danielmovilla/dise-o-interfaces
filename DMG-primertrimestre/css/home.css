@@ -1,0 +1,226 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../css/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Hammersmith;
+    src: url(../css/fonts/Hammersmith_One/HammersmithOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-light;
+    src: url(../css/fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-italic;
+    src: url(../css/fonts/Montserrat/static/Montserrat-Italic.ttf);
+}
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgb(95, 54, 190) 0%, rgba(255,255,255,1) 100%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 130px;
+}
+
+h1 {
+    font-family: Montserrat-light;
+    float: left;
+    font-weight: 800;
+    display: inline;
+    font-size: 2.3em;
+    margin: 50px;
+    margin-left: 0vw;
+    margin-block-start: 0em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3 {
+    font-family: Montserrat;
+    float: right;
+}
+
+h4 {
+    font-family: Hammersmith;
+    float: right;
+    color: rgba(240, 236, 236, 0.911);
+    padding-left: 10px;
+    margin: 0px;
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h6 {
+    font-family: Montserrat;
+    float: right;
+    color:rgba(126, 91, 121, 0);
+}
+
+a.header {
+    float: right
+}
+
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(144,144,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+div.main {
+    font-family: Hammersmith;
+    margin: 135px 10px 30px 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(48, 48, 87) 0%, rgba(255,255,255,1) 100%);
+}
+
+img.header {
+    float: left;
+}
+
+img.footer {
+    margin-top: 8px;
+    margin-left: 5px;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+p.palabra1 {
+    font-size: 9vw;
+    margin: 0px;
+    position: absolute;
+    display: block;
+    margin-block-start: 1.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 95px;
+    margin-inline-end: 0px;
+}
+
+p.palabra2 {
+    font-size: 16vw;
+    margin: 0px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 42px;
+    margin-inline-end: 0px;
+    position: absolute;
+}
+
+p.texto1 {
+    margin: -5px;
+    font-size: 3vw;
+    display: block;
+    margin-block-start: 12em;
+    margin-block-end: -1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    position: absolute;
+}
+
+p.texto2 {
+    margin: 0px;
+    font-size: 6vw;
+    display: block;
+    margin-block-start: 6.28em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    position: absolute;
+}
+
+p.header {
+    font-size: 25px;
+    font-family: Montserrat-italic;
+    color:rgba(240, 236, 236, 0.911);
+    display: block;
+    float:inherit;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+}
+
+img.cara {
+    border-radius: 50%;
+    border: 2px solid #ad61a788;
+    margin: 0px;
+    display: block;
+    width: 24vw; /** 50vw */
+    height: 30.66vw; /** 56.66vw */
+    margin-block-start: 1.22em;
+    margin-block-end: 1em;
+    margin-inline-start: 63vw;
+    margin-inline-end: 0px;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 878px) {
+    button.button1 {
+        visibility: hidden;
+        transition-duration: 0.01ms;
+    }
+}
+
+@media (max-width: 878px) {
+    a.header {
+        visibility: hidden;
+    }
+}
+
+.button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 3px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Hammersmith;
+    margin: 4px 2px;
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: rgba(228, 187, 219, 0.418); 
+    border: 2px solid #ffd900;
+  }
+  
+  .button1:hover {
+    background-color: #ea00ff;
+    color: rgb(255, 255, 255);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  div.navegacion {
+    margin-block-start: 5vw;
+    padding-block-start: 50vw;
+    text-align: center;
+  }
+
+
+
+
