@@ -1,0 +1,102 @@
+$colorfondo: lightblue;
+$colortexto: darkblue;
+$tamanotexto: 18px;
+$h2tamano: 30px;
+$h3tamano: 1em;
+$h4tamano: 1.2rem;
+$colorfinal: rgba(255, 5, 5, 0.534);
+
+
+@mixin colorines-felices {
+  background-color: crimson;
+  color: rgba(229, 255, 0, 0.656)
+}
+
+@mixin psicodelia {
+  @keyframes pulse {
+    0% {
+      background-color: #a1ffcb;
+    }
+    50% {
+      background-color: #6ae770;
+    }
+    100% {
+      background-color: #a1ffcb;
+    }
+  }
+  .element {
+    width: 100%;
+    height: 100%;
+    animation: pulse 1s infinite;
+  }
+}
+
+
+html {
+  @include psicodelia();
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+
+p {
+  background-color: $colorfondo;
+  color: $colortexto;
+  font-size: $tamanotexto;
+}
+
+h1 {
+background-color: $colortexto;
+}
+
+ul {
+  background-color: $colorfinal;
+}
+
+h2 {
+  @include colorines-felices;
+  font-size: $h2tamano;
+}
+
+h3 {
+  font-size: $h3tamano;
+}
+
+h4 {
+  @include colorines-felices;
+  font-size: $h4tamano;
+}
+
+li {
+  background-color: $colortexto;
+}
+
+button {
+  background-color: #6ae770;
+  color: rgba(207, 243, 149, 0.877);
+  &:hover {
+    background-color: rgba(221, 90, 90, 0.342);
+    color: rgb(238, 73, 136);
+  }
+}
+
+@mixin circle($width ,$height ,$color , $border-radius) {
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: $border-radius;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle-1 {
+ @include circle (351px,random(300) + px,red,70%);
+}
+
+.circle-2 {
+  margin: 5vw;
+ @include circle (350px,256px,rgb(71, 186, 201),34%);
+}
+
+
