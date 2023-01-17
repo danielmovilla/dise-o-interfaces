@@ -57,18 +57,21 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* Tablets */
-    .flex-item {
-        width: 350px;
+    .flex-item#f1, .flex-item#f2, .flex-item#f3, .flex-item#f4 {
+        width: 40.33vw;
         height: 120px;
         font-size: 39px;
     }
 
     .flex-item#f5 {
+        width: 90vw;
+        height: 100px;
         outline: 5px solid rgb(216, 98, 206);
         margin: 10px 5px 5px 10px;
         padding: 10px;
         color: rgb(212, 0, 255);
         background-color: beige;
+        font-size: 39px;
     }
 }
 
@@ -78,7 +81,7 @@ body {
     .flex-item#f1,
     .flex-item#f2,
     .flex-item#f3 {
-        width: 30.33vw;
+        width: 29.33vw;
         height: 100px;
         font-size: 45px;
     }
@@ -95,7 +98,7 @@ body {
     }
 
     .flex-item#f4 {
-        width: 45vw;
+        width: 43vw;
         height: 100px;
         font-size: 44px;
         outline: 5px solid rgb(23, 247, 255);
