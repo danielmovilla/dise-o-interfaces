@@ -1,0 +1,54 @@
+@font-face {
+    font-family: raleway;
+    src: url(web_recursos/raleway/Raleway-Heavy.ttf);
+}
+
+@font-face {
+    font-family: raleway2;
+    src: url(web_recursos/raleway/Raleway-Regular.ttf);
+}
+body {
+    font-family: raleway2;
+}
+header {
+    font-family: raleway2;
+    text-align: center;
+    background-color: aquamarine;
+}
+nav {
+    text-align: center;
+    margin: 5px 2px 2px 5px;
+    background-color: hsla(0, 28%, 63%, 0.53);
+}
+
+footer {
+    background-color: hsla(79, 51%, 66%, 1);
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+a {
+    text-align: left;
+    width: 400px;
+    height: 300px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: raleway;
+}
+
+#div.logo {
+    text-align: start;
+}
+
+#div.foto1 {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
