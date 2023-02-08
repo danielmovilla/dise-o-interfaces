@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos-fijos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title> CRTM (</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Consorcio_Regional_de_Transportes_de_Madrid.svg/1200px-Consorcio_Regional_de_Transportes_de_Madrid.svg.png"
+                        alt="foto-crtm" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button id="centrador" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-1 mb-md-0">
+                        <button id="centrador" class="btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Metro
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" id="metro-1" href="metro-1.html">Línea 1 (Pinar de Chamartín –
+                                    Valdecarros)</a></li>
+                            <li><a class="dropdown-item text-white" id="metro-2" href="metro-2.html">Línea 2 (Las Rosas
+                                    – Cuatro Caminos)</a></li>
+                            <li><a class="dropdown-item" id="metro-3" href="metro-3.html">Línea 3 (Villaverde Alto –
+                                    Moncloa)</a></li>
+                            <li><a class="dropdown-item" id="metro-4" href="metro-4.html">Línea 4 (Argüelles – Pinar de
+                                    Chamartín)</a></li>
+                            <li><a class="dropdown-item" id="metro-5" href="metro-5.html">Línea 5 (Alameda de Osuna –
+                                    Casa de Campo) </a></li>
+                            <li><a class="dropdown-item" id="metro-6" href="metro-6.html">Línea 6 - Circular</a></li>
+                            <li><a class="dropdown-item" id="metro-7" href="metro-7.html">Línea 7 (Hospital del Henares
+                                    – Pitis)</a></li>
+                            <li><a class="dropdown-item" id="metro-8" href="metro-8.html">Línea 8 (Nuevos Ministerios –
+                                    Aeropuerto T4) </a></li>
+                            <li><a class="dropdown-item text-white" id="metro-9" href="metro-9.html">Línea 9 (Paco de
+                                    Lucía – Arganda del Rey)</a></li>
+                            <li><a class="dropdown-item text-white" id="metro-10" href="metro-10.html">Línea 10
+                                    (Hospital Infanta Sofía – Puerta del Sur) </a></li>
+                            <li><a class="dropdown-item text-white" id="metro-11" href="metro-11.html">Línea 11 (Plaza
+                                    Elíptica – La Fortuna)</a></li>
+                            <li><a class="dropdown-item" id="metro-12" href="metro-12.html">Línea 12 - Metrosur</a></li>
+                            <li><a class="dropdown-item" id="metro-ramal" href="metro-ramal.html">Ramal (Ópera -
+                                    Príncipe Pío)</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-1 mb-md-0">
+                        <button id="centrador" class="btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Metro Ligero
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-white" id="metro-ml1" href="metroligero-1.html">ML1 (Pinar
+                                    de Chamartín – Las Tablas) </a></li>
+                            <li><a class="dropdown-item text-white" id="metro-ml2" href="metroligero-2.html">ML2
+                                    (Colonia Jardín – Estación de Aravaca) </a></li>
+                            <li><a class="dropdown-item text-white" id="metro-ml3" href="metroligero-3.html">ML3
+                                    (Colonia Jardín – Puerta de Boadilla) </a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-1 mb-md-0">
+                        <button id="centrador" class="btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cercanías
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" id="cercanias-1" href="cercanias-1.html">C-1 (Príncipe Pío -
+                                    Aeropuerto T4)</a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-2" href="cercanias-2.html">C-2
+                                    (Guadalajara - Chamartín) </a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-3" href="cercanias-3.html">C-3
+                                    (Aranjuez - Chamartín)</a></li>
+                            <li><a class="dropdown-item" id="cercanias-3a" href="cercanias-3a.html">C-3A (Aranjuez -
+                                    Escorial - St.ª M.ª de la Alameda)</a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-4" href="cercanias-4a.html">C-4A
+                                    (Parla – Alcobendas - S. S. de los Reyes)</a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-4" href="cercanias-4b.html">C-4B
+                                    (Parla – Colmenar Viejo)</a></li>
+                            <li><a class="dropdown-item" id="cercanias-5" href="cercanias-5.html">C-5 (Móstoles-El Soto
+                                    – Humanes)</a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-7" href="cercanias-7.html">C-7 (Alcalá
+                                    de Henares – Príncipe Pío)</a></li>
+                            <li><a class="dropdown-item text-white" id="cercanias-8" href="cercanias-8.html">C-8
+                                    (Guadalajara – Cercedilla)</a></li>
+                            <li><a class="dropdown-item" id="cercanias-9" href="cercanias-9.html">C-9 (Cercedilla –
+                                    Cotos)</a></li>
+                            <li><a class="dropdown-item" id="cercanias-10" href="cercanias-10.html">C-10 (Villalba -
+                                    Aeropuerto T4)</a></li>
+                        </ul>
+                    </ul>
+                    </ul>
+                    <a href="mapas.html">
+                        <button class="btn btn-secondary" type="button">
+                            Mapas
+                        </button>
+                    </a>
+                    <a href="tarifas.html">
+                        </ul>
+                        <button class="btn btn-secondary" type="button">
+                            Tarifas
+                        </button>
+                    </a>
+                    <a href="acercade.html">
+                    </ul>
+                    <button class="btn btn-secondary" type="button">
+                        Acerca de...
+                    </button>
+                    </a>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div id="separator"></div>
+        <div class="container3">
+            <div class="entrada">
+                <img src="https://www.metromadrid.es/themes/custom/buson8/images/icons-line/linea-2.svg" class="img-fluid" alt="Responsive image"> <h1 class="titulo-metro2"> Cuatro Caminos <br> Las Rosas</h1>           
+                </img> </div>
+            </div>
+
+            <div class="parada"> 
+                <element class="circle-metro2"></element> 
+                <h2 id="parada-simple" class="text-start text-capitalize fs-2 fw-bold"> Pinar de Chamartín
+                    <a class="link-light" href="metro-4.html"> <img class="logos" src="https://www.metromadrid.es/themes/custom/buson8/images/icons-line/linea-4.svg"/> </a>
+                    <a class="link-light" href="metroligero-1.html"> <img class="logos" src="https://www.metromadrid.es/themes/custom/buson8/images/icons-line/ml1.svg"/> </a>
+                </h2>
+                <element class="rectangle-metro2"></element>
+            </div>
+
+            <div class="parada"> 
+                <element class="circle-metro2"></element> 
+                <h2 id="parada-simple" class="text-start text-capitalize fs-2 fw-light"> Bambú </h2>
+                <element class="rectangle-metro2"></element>
+            </div>
+
+            <div class="parada"> 
+                <element class="circle-metro2"></element> 
+                <h2 id="parada-simple" class="text-start text-capitalize fs-2 fw-bold"> Chamartín </h2>
+                <element class="rectangle-metro2"></element>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+</body>
+</html>

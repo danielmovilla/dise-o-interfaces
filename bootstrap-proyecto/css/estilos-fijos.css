@@ -1,0 +1,58 @@
+/* Para las media queries */
+
+@media (max-width: 321px) and (min-width: 0px) {
+    .rectangle, .rectangle-metro2, .rectangle-metro3, .rectangle-metro4, .rectangle-metro5, .rectangle-metro6,
+    .rectangle-metro7, .rectangle-metro8, .rectangle-metro9, .rectangle-metro10, .rectangle-metro11, .rectangle-metro12,
+    .rectangle-metroligero1, .rectangle-metroligero2, .rectangle-metroligero3, .rectangle-cercanias1, .rectangle-cercanias1, 
+    .rectangle-cercanias2, .rectangle-cercanias3, .rectangle-cercanias3a, .rectangle-cercanias4a, .rectangle-cercanias4b, 
+    .rectangle-cercanias5, .rectangle-cercanias7, .rectangle-cercanias8, .rectangle-cercanias9, .rectangle-cercanias10 {
+      width: 202px;
+      margin-left: -66px;
+
+    }
+}
+
+@media (max-width: 5000px) and (min-width: 322px) {
+    .rectangle, .rectangle-metro2, .rectangle-metro3, .rectangle-metro4, .rectangle-metro5, .rectangle-metro6,
+    .rectangle-metro7, .rectangle-metro8, .rectangle-metro9, .rectangle-metro10, .rectangle-metro11, .rectangle-metro12,
+    .rectangle-metroligero1, .rectangle-metroligero2, .rectangle-metroligero3, .rectangle-cercanias1, .rectangle-cercanias1, 
+    .rectangle-cercanias2, .rectangle-cercanias3, .rectangle-cercanias3a, .rectangle-cercanias4a, .rectangle-cercanias4b, 
+    .rectangle-cercanias5, .rectangle-cercanias7, .rectangle-cercanias8, .rectangle-cercanias9, .rectangle-cercanias10 {
+      width: 120px;
+      margin-left: -24px;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 0px) {
+    .logos {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 497px) and (min-width: 432px) {
+    .rectangle, .rectangle-metro2, .rectangle-metro3, .rectangle-metro4, .rectangle-metro5, .rectangle-metro6,
+    .rectangle-metro7, .rectangle-metro8, .rectangle-metro9, .rectangle-metro10, .rectangle-metro11, .rectangle-metro12,
+    .rectangle-metroligero1, .rectangle-metroligero2, .rectangle-metroligero3, .rectangle-cercanias1, .rectangle-cercanias1, 
+    .rectangle-cercanias2, .rectangle-cercanias3, .rectangle-cercanias3a, .rectangle-cercanias4a, .rectangle-cercanias4b, 
+    .rectangle-cercanias5, .rectangle-cercanias7, .rectangle-cercanias8, .rectangle-cercanias9, .rectangle-cercanias10 {
+        width: 144px;
+        margin-left: -35px;
+    }
+}
+@media (max-width: 431px) and (min-width: 322px) {
+    .rectangle, .rectangle-metro2, .rectangle-metro3, .rectangle-metro4, .rectangle-metro5, .rectangle-metro6,
+    .rectangle-metro7, .rectangle-metro8, .rectangle-metro9, .rectangle-metro10, .rectangle-metro11, .rectangle-metro12,
+    .rectangle-metroligero1, .rectangle-metroligero2, .rectangle-metroligero3, .rectangle-cercanias1, .rectangle-cercanias1, 
+    .rectangle-cercanias2, .rectangle-cercanias3, .rectangle-cercanias3a, .rectangle-cercanias4a, .rectangle-cercanias4b, 
+    .rectangle-cercanias5, .rectangle-cercanias7, .rectangle-cercanias8, .rectangle-cercanias9, .rectangle-cercanias10 {
+        width: 182px;
+        margin-left: -55px;
+    }
+}
+
+/* @media (max-width: 5000px) and (min-width: 0px) {
+    body {
+        margin-left: 60px;
+    }
+} */

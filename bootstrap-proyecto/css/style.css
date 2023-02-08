@@ -1,0 +1,235 @@
+#cercanias-1 {
+  background-color: rgb(80, 176, 229);
+}
+
+#cercanias-2 {
+  background-color: rgb(30, 149, 64);
+}
+
+#cercanias-3 {
+  background-color: rgb(148, 36, 164);
+}
+
+#cercanias-3a {
+  background-color: rgb(235, 93, 189);
+}
+
+#cercanias-4 {
+  background-color: rgb(23, 61, 162);
+}
+
+#cercanias-5 {
+  background-color: rgb(251, 184, 0);
+}
+
+#cercanias-7 {
+  background-color: rgb(217, 48, 70);
+}
+
+#cercanias-8 {
+  background-color: rgb(120, 120, 124);
+}
+
+#cercanias-9 {
+  background-color: rgb(249, 89, 0);
+}
+
+#cercanias-10 {
+  background-color: rgb(144, 191, 0);
+}
+
+#metro-1 {
+  background-color: rgb(58, 167, 226);
+}
+
+#metro-2 {
+  background-color: rgb(196, 29, 39);
+}
+
+#metro-3 {
+  background-color: rgb(250, 212, 60);
+}
+
+#metro-4 {
+  background-color: rgb(172, 99, 72);
+}
+
+#metro-5 {
+  background-color: rgb(132, 184, 44);
+}
+
+#metro-6 {
+  background-color: rgb(160, 158, 156);
+}
+
+#metro-7 {
+  background-color: rgb(241, 145, 7);
+}
+
+#metro-8 {
+  background-color: rgb(236, 95, 151);
+}
+
+#metro-9 {
+  background-color: rgb(145, 42, 119);
+}
+
+#metro-10 {
+  background-color: rgb(20, 106, 175);
+}
+
+#metro-11 {
+  background-color: rgb(19, 92, 49);
+}
+
+#metro-12 {
+  background-color: rgb(173, 170, 46);
+}
+
+#metro-ramal {
+  background-color: rgb(121, 152, 193);
+}
+
+#metro-ml1 {
+  background-color: rgb(15, 107, 177);
+}
+
+#metro-ml2 {
+  background-color: rgb(138, 50, 110);
+}
+
+#metro-ml3 {
+  background-color: rgb(209, 33, 57);
+}
+
+#separator {
+  margin-top: 70px;
+}
+
+.circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(58, 167, 226);
+  border-color: rgb(58, 167, 226);
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(58, 167, 226);
+  border-color: rgb(58, 167, 226);
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+main {
+  margin-left: 61px;
+  margin-bottom: 100px;
+}
+
+#parada-simple {
+  margin-top: -62px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white(--bs-link-color);
+}
+
+.logos {
+  width: 61px;
+  height: 43px;
+  margin-left: -10px;
+  margin-top: 0px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.alert {
+  border: 1px solid rgba(198, 83, 140, 0.88);
+}
+
+.titulo {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(58, 167, 226);
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+}
+
+.entrada {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+
+.circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(58, 167, 226);
+  border-color: rgb(58, 167, 226);
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(58, 167, 226);
+  border-color: rgb(58, 167, 226);
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+.circle-metro2 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(196, 29, 39);
+  border-color: rgb(196, 29, 39);
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle-metro2 {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(196, 29, 39);
+  border-color: rgb(196, 29, 39);
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+.titulo-metro2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(196, 29, 39);
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+}/*# sourceMappingURL=style.css.map */

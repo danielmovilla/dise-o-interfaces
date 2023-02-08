@@ -1,0 +1,248 @@
+
+$color-linea1: rgba(58,167,226);
+$color-linea2: rgba(196,29,39);
+$color-linea3: rgba(250,212,60);
+$color-linea4: rgba(172,99,72);
+$color-linea5: rgba(132,184,44);
+$color-linea6: rgba(160,158,156);
+$color-linea7: rgba(241,145,7);
+$color-linea8: rgba(236,95,151);
+$color-linea9: rgba(145,42,119);
+$color-linea10: rgba(20,106,175);
+$color-linea11: rgba(19,92,49);
+$color-linea12: rgba(173,170,46);
+
+$color-ramal: rgba(121,152,193);
+$color-ml1: rgba(15,107,177);
+$color-ml2: rgba(138,50,110);
+$color-ml3: rgba(209, 33, 57);
+
+$color-letra3: rgb(25, 63, 92);
+$color-letraramal: rgba(15,107,177);
+
+$cercanias-1: rgba(80,176,229);
+$cercanias-2: rgba(30,149,64);
+$cercanias-3: rgba(148,36,164);
+$cercanias-3a: rgba(235,93,189);
+$cercanias-4: rgba(23,61,162);
+$cercanias-5: rgba(251,184,0);
+$cercanias-7: rgba(217,48,70);
+$cercanias-8: rgba(120,120,124);
+$cercanias-9: rgba(249,89,0);
+$cercanias-10: rgba(144,191,0);
+
+#cercanias-1 {
+  background-color: $cercanias-1;
+}
+#cercanias-2 {
+  background-color: $cercanias-2;
+}
+#cercanias-3 {
+  background-color: $cercanias-3;
+}
+#cercanias-3a {
+  background-color: $cercanias-3a;
+}
+#cercanias-4 {
+  background-color: $cercanias-4;
+}
+#cercanias-5 {
+  background-color: $cercanias-5;
+}
+#cercanias-7 {
+  background-color: $cercanias-7;
+}
+#cercanias-8 {
+  background-color: $cercanias-8;
+}
+#cercanias-9 {
+  background-color: $cercanias-9;
+}
+#cercanias-10 {
+  background-color: $cercanias-10;
+}
+
+#metro-1 {
+  background-color: $color-linea1;
+}
+#metro-2 {
+  background-color: $color-linea2;
+}
+#metro-3 {
+  background-color: $color-linea3;
+}
+#metro-4 {
+  background-color: $color-linea4;
+}
+#metro-5 {
+  background-color: $color-linea5;
+}
+#metro-6 {
+  background-color: $color-linea6;
+}
+#metro-7 {
+  background-color: $color-linea7;
+}
+#metro-8 {
+  background-color: $color-linea8;
+}
+#metro-9 {
+  background-color: $color-linea9;
+}
+#metro-10 {
+  background-color: $color-linea10;
+}
+#metro-11 {
+  background-color: $color-linea11;
+}
+#metro-12 {
+  background-color: $color-linea12;
+}
+
+#metro-ramal {
+  background-color: $color-ramal;
+}
+#metro-ml1 {
+  background-color: $color-ml1;
+}
+#metro-ml2 {
+  background-color: $color-ml2;
+}
+#metro-ml3 {
+  background-color: $color-ml3;
+}
+#separator {
+  margin-top: 70px;
+}
+
+.circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: $color-linea1;
+  border-color: $color-linea1;
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: $color-linea1;
+  border-color: $color-linea1;
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+main {
+  margin-left: 61px;
+  margin-bottom: 100px;
+}
+
+#parada-simple {
+  margin-top: -62px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white(--bs-link-color);
+  $link-decoration: white;
+}
+
+.logos {
+  width: 61px;
+  height: 43px;
+  margin-left: -10px;
+  margin-top: 0px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}
+
+.titulo {
+  font-size: 40px;
+  font-weight: bold;
+  color: $color-linea1;
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+}
+
+.entrada {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+
+.circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: $color-linea1;
+  border-color: $color-linea1;
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: $color-linea1;
+  border-color: $color-linea1;
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+.circle-metro2 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: $color-linea2;
+  border-color: $color-linea2;
+  border: 50px;
+  border-radius: 50%;
+}
+
+.rectangle-metro2 {
+  width: 100px;
+  margin-left: -13px;
+  display: inline-block;
+  height: 30px;
+  background-color: $color-linea2;
+  border-color: $color-linea2;
+  border: 50px;
+  border-radius: 1%;
+  transform: rotate(90deg);
+}
+
+.titulo-metro2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: $color-linea2;
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+}
