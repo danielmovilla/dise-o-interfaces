@@ -48,6 +48,7 @@
 
 #metro-3 {
   background-color: rgb(250, 212, 60);
+  color: rgb(25, 63, 92);
 }
 
 #metro-4 {
@@ -91,7 +92,7 @@
 }
 
 #metro-ml1 {
-  background-color: rgb(15, 107, 177);
+  background-color: rgb(20, 146, 243);
 }
 
 #metro-ml2 {
@@ -110,8 +111,6 @@
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-color: rgb(58, 167, 226);
-  border-color: rgb(58, 167, 226);
   border: 50px;
   border-radius: 50%;
 }
@@ -121,8 +120,6 @@
   margin-left: -13px;
   display: inline-block;
   height: 30px;
-  background-color: rgb(58, 167, 226);
-  border-color: rgb(58, 167, 226);
   border: 50px;
   border-radius: 1%;
   transform: rotate(90deg);
@@ -130,7 +127,7 @@
 
 main {
   margin-left: 61px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 #parada-simple {
@@ -168,7 +165,6 @@ footer {
 .titulo {
   font-size: 40px;
   font-weight: bold;
-  color: rgb(58, 167, 226);
   margin-top: 10px;
   margin-left: 15px;
   float: left;
@@ -181,55 +177,178 @@ footer {
   margin-bottom: 30px;
 }
 
-.circle {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background-color: rgb(58, 167, 226);
-  border-color: rgb(58, 167, 226);
-  border: 50px;
-  border-radius: 50%;
+#texto-linea1 {
+  color: rgb(58, 167, 226);
 }
 
-.rectangle {
-  width: 100px;
-  margin-left: -13px;
-  display: inline-block;
-  height: 30px;
-  background-color: rgb(58, 167, 226);
-  border-color: rgb(58, 167, 226);
-  border: 50px;
-  border-radius: 1%;
-  transform: rotate(90deg);
-}
-
-.circle-metro2 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background-color: rgb(196, 29, 39);
-  border-color: rgb(196, 29, 39);
-  border: 50px;
-  border-radius: 50%;
-}
-
-.rectangle-metro2 {
-  width: 100px;
-  margin-left: -13px;
-  display: inline-block;
-  height: 30px;
-  background-color: rgb(196, 29, 39);
-  border-color: rgb(196, 29, 39);
-  border: 50px;
-  border-radius: 1%;
-  transform: rotate(90deg);
-}
-
-.titulo-metro2 {
-  font-size: 40px;
-  font-weight: bold;
+#texto-linea2 {
   color: rgb(196, 29, 39);
-  margin-top: 10px;
-  margin-left: 15px;
-  float: left;
+}
+
+#texto-linea3 {
+  color: rgb(250, 212, 60);
+}
+
+#texto-linea4 {
+  color: rgb(172, 99, 72);
+}
+
+#texto-linea5 {
+  color: rgb(132, 184, 44);
+}
+
+#texto-linea6 {
+  color: rgb(160, 158, 156);
+}
+
+#texto-linea7 {
+  color: rgb(241, 145, 7);
+}
+
+#texto-linea8 {
+  color: rgb(236, 95, 151);
+}
+
+#texto-linea9 {
+  color: rgb(145, 42, 119);
+}
+
+#texto-linea10 {
+  color: rgb(20, 106, 175);
+}
+
+#texto-linea11 {
+  color: rgb(19, 92, 49);
+}
+
+#texto-linea12 {
+  color: rgb(173, 170, 46);
+}
+
+#texto-ramal {
+  color: rgb(121, 152, 193);
+}
+
+#texto-ml1 {
+  color: rgb(20, 146, 243);
+}
+
+#texto-ml2 {
+  color: rgb(138, 50, 110);
+}
+
+#texto-ml3 {
+  color: rgb(209, 33, 57);
+}
+
+#texto-cercanias-1 {
+  color: rgb(80, 176, 229);
+}
+
+#texto-cercanias-2 {
+  color: rgb(30, 149, 64);
+}
+
+#texto-cercanias-3 {
+  color: rgb(148, 36, 164);
+}
+
+#texto-cercanias-3a {
+  color: rgb(235, 93, 189);
+}
+
+#texto-cercanias-4 {
+  color: rgb(23, 61, 162);
+}
+
+#texto-cercanias-5 {
+  color: rgb(251, 184, 0);
+}
+
+#texto-cercanias-7 {
+  color: rgb(217, 48, 70);
+}
+
+#texto-cercanias-8 {
+  color: rgb(120, 120, 124);
+}
+
+#texto-cercanias-9 {
+  color: rgb(249, 89, 0);
+}
+
+#texto-cercanias-10 {
+  color: rgb(144, 191, 0);
+}
+
+#carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+#centrador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-principal-inicio {
+  width: 433px;
+  height: 300px;
+  margin-left: 43vw;
+  margin-top: 5px;
+  align-items: center;
+  display: flex;
+}
+
+.logos-inicio {
+  width: 10vw;
+  height: 10vh;
+  margin-left: 1px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#inicio {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  font-weight: 650;
+  color: #201f1e;
+}
+
+div.margenes {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-album {
+  width: 400px;
+  height: 333px;
 }/*# sourceMappingURL=style.css.map */
