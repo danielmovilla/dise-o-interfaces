@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Estudiando al cliente</title>
+</head>
+<body>
+<center>
+<body>
+<h1>Enviando datos de forma asíncrona con AJAX</h1>
+<p>Por favor, introduce los siguientes datos</p>
+<form name="rrss">
+   <p><label>¿Cuál es tu nombre?</label> <input type="text" id="txtNombre" required /></p>
+   <p><label>¿Nos das tu correo?</label> <input type="email" id="txtCorreo" required /></p>
+   <p><label>¿Cómo nos has conocido?</label> <select id="cmbMedio">
+      <option value="FaceBook">Facebook</option>
+      <option value="Twitter">Twitter</option>
+      <option value="Whatsapp">Whatsapp</option>
+      <option value="Correo">Mail</option>
+   </select></p>
+   <p><input type="checkbox" id="chkPeticion"/> <label>¿Quieres recibir nuestra información por el medio que nos has conocido?</label></p>
+   <p><input type="button" value=" Aceptar " id="btonacep"/></p><br>
+   <p><b>Resultado de la conexión al servidor:</b></p><br>
+   <div name="devolucion"></div>
+</form>
+</center>
+<script language="javascript">
+var bton;
+var xhr;
+var btncalcula
+var cjvalor1;
+var cjvalor2;
+var desplegable;
+var pido;
+var sresultado;
+
+function comunicando(evento) {
+	alert("Entrando en peticion Ajax");
+	if (pido.checked){
+		pido.value="Quiero que se me envie informacion por " + desplegable.value;
+	}else{
+		pido.value="No deseo recibir informacion";
+	}
+
+	alert(desplegable.value);		
+	if (cjvalor1.value !='' && cjvalor2.value != ''){
+		cjvalor1.disabled = true;
+		cjvalor2.disabled = true;
+		xhr = new XMLHttpRequest();
+		xhr.addEventListener('readystatechange', gestionarRespuesta, false);
+		xhr.open('POST', 'datos.php', true);
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.send('nom=' + cjvalor1.value + '&cor=' + cjvalor2.value + '&opc=' + desplegable.value + '&pet=' + pido.value);
+	}				
+			
+}
+
+function gestionarRespuesta(evento) {
+	if (evento.target.readyState == 4 && evento.target.status == 200) {
+		cjvalor1.disabled = false;
+		cjvalor2.disabled = false;
+		alert(evento.target.responseText);
+		document.getElementsByName("devolucion")[0].innerHTML = evento.target.responseText;
+	}
+}
+
+
+
+function inicio(){
+	bton=document.getElementById("btonacep");
+	cjvalor1=document.getElementById('txtNombre');
+	cjvalor2=document.getElementById('txtCorreo');
+	desplegable=document.getElementById('cmbMedio');
+	cjvalor1.value="";
+	cjvalor2.value="";
+	pido=document.getElementById('chkPeticion');
+
+	bton.addEventListener("click", comunicando, false);
+
+}
+
+
+document.addEventListener("DOMContentLoaded", inicio, false);
+</script>
+</body>
+</html>

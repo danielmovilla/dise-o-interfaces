@@ -1,0 +1,62 @@
+<html>
+<head><title></title>
+</head>
+<body>
+
+
+<script>
+function genera_tabla() {
+  var contador=0;
+  var opciones =["Abierto 24h", "Solo mujeres", "Clases Colectivas", "Crossfit", "Artes Marciales", "Pilates"]
+  var body = document.getElementsByTagName("body")[0];
+ 
+
+  var tabla   = document.createElement("table");
+  var tblBody = document.createElement("tbody");
+ 
+// Con el siguiente for se crean las hileras o filas de la tabla
+  
+  for (var i = 0; i < 3; i++) {
+    
+    var hilera = document.createElement("tr");
+	
+    // A continuación se crean las celdas
+ 
+    for (var j = 0; j < 2; j++) {
+     
+      var celda = document.createElement("td");
+		var check = document.createElement('input');
+    		check.setAttribute('type', 'checkbox');
+		check.setAttribute('defaultchecked','1');
+		check.setAttribute('name', 'selecciona');
+		check.setAttribute('value',opciones[contador]);
+	
+		var texto= document.createTextNode(opciones[contador]);
+        
+		check.appendChild(texto);
+	
+		celda.appendChild(check);
+		celda.appendChild(texto);
+
+		contador=contador + 1;
+
+                hilera.appendChild(celda);
+    }
+ 
+    // agrega la hilera al final de la tabla (al final del elemento tblbody)
+    tblBody.appendChild(hilera);
+  }
+ 
+  // posiciona el <tbody> debajo del elemento <table>
+  tabla.appendChild(tblBody);
+  // appends <table> into <body>
+  body.appendChild(tabla);
+  // modifica el atributo "border" de la tabla y lo fija a "2";
+  tabla.setAttribute("border", "2");
+}
+
+
+document.addEventListener("DOMContentLoaded", genera_tabla, false);
+</script>
+</body>
+</html>
