@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Pulsa para ver las coordenadas de tu click en la página.</p>
+    <h3> Coordenada X </h3><input name="coordenadaX" type="text" id="coordenadaX"> <br>
+    <h3> Coordenada Y </h3><input name="coordenadaY" type="text" id="coordenadaY">
+
+    <script>
+
+        document.addEventListener("click", (e) => {
+
+            var coordenadaX = document.getElementById("coordenadaX");
+            var coordenadaY = document.getElementById("coordenadaY");
+
+            coordenadaX.value = e.clientX;
+            coordenadaY.value = e.clientY;
+
+            console.log(coordenadaX);
+            console.log(coordenadaY);
+
+        });
+    </script>
+</body>
+</html>

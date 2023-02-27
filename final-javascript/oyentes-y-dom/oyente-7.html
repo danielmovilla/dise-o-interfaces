@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sacar los elementos de un pedido // LocalStorage </title>
+</head>
+
+<body>
+    <form name="formulario">
+        <h3> Nombre y apellido </h3> <input name="nombre" id="nombre" /> <br>
+        <h3> Tipo de pago </h3>
+        <input type="radio" name="radio" value="Trimestral"> Trimestral
+        <input type="radio" name="radio" value="Mensual"> Mensual
+        <input type="radio" name="radio" value="Anual"> Anual <br>
+        <h3> Accesorios </h3>
+        <input type="checkbox" name="reparacion" value="Aire Acondicionado"> Aire Acondicionado </input>
+        <input type="checkbox" name="reparacion" value="Elevalunas Electrico"> Elevalunas Electrico </input>
+        <input type="checkbox" name="reparacion" value="Radio del Coche"> Radio del Coche </input> <br>
+        <h3> Color </h3>
+        <select name="color" id="color">
+            <option value="rojo"> Rojo </option>
+            <option value="verde"> Verde </option>
+            <option value="azul"> Azul </option>
+            <option value="amarillo"> Amarillo </option>
+            <option value="blanco"> Blanco </option>
+        </select> <br>
+        <button name="boton" type="button" onclick="enviarFormulario()"> Enviar datos </button>
+    </form>
+    <script>
+        function enviarFormulario() {
+            /* Para coger el valor del nombre */
+            var nombre = document.querySelector('#nombre').value;
+            console.log("Nombre del usuario: " + nombre);
+
+            /* Para coger el valor de un radio */
+            var tipoPago = document.querySelector('input[name="radio"]:checked').value;;
+            console.log("Tipo de pago a realizar: " + tipoPago);
+
+            /* Para coger el valor de un select */
+            var e = document.getElementById("color");
+            var color = e.value;
+            var texto = e.options[e.selectedIndex].text;
+
+            console.log("Color del valor: " + color);
+            console.log("Color del texto: " + texto);
+
+            /* Para coger el valor de un checkbox */
+            // get the data from the checkboxes
+            var reparacion = document.getElementsByName('reparacion');
+            var selectedReparacion = [];
+            for (var i = 0; i < reparacion.length; i++) {
+                if (reparacion[i].checked) {
+                    selectedReparacion.push(reparacion[i].value + " ");
+                }
+            }
+            console.log("Reparaciones a realizar: " + selectedReparacion);
+
+        }
+    </script>
+</body>
+
+</html>

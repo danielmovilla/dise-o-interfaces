@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Celdas dinámicas</title>
+    <style>
+        table, td, tr, th {
+            border: 1px solid black;
+        }
+        td {
+            width: 70px;
+            height: 44px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // create a 20x20 table
+        var body = document.getElementsByTagName("body")[0];
+        var tabla = document.createElement("table");
+        tabla.setAttribute('id', 'tabla');
+        console.log(tabla);
+
+        for (i = 0; i < 12; i++) {
+            var linea = tabla.insertRow(i);
+            for (j = 0; j < 18; j++) {
+                var celda = linea.insertCell(j);
+            }
+        }
+
+        body.appendChild(tabla);
+
+
+        // create a addeventlistener to know the row and the column of the cell clicked
+        var celdas = document.getElementsByTagName("td");
+        for (i = 0; i < celdas.length; i++) {
+            celdas[i].addEventListener("click", (e) => {
+                var linea = e.target.parentNode;
+                var tabla = linea.parentNode;
+                var fila = linea.rowIndex;
+                var columna = e.target.cellIndex;
+                console.log("fila: " + fila + " columna: " + columna);
+
+                // paint to red the cell clicked
+                 linea.style.backgroundColor = "red";
+
+                // paint to green the cell of the same column of the cell clicked
+                 for (i = 0; i < tabla.rows.length; i++) {
+                     tabla.rows[i].cells[columna].style.backgroundColor = "green";
+                 }
+
+                // paint to yellow the intersection of the columns and the rows of the cell clicked
+                    var k, l;
+                    console.log("Nº columnas: " + tabla.rows.length);
+                    console.log("Nº filas: " + tabla.rows[0].cells.length);
+                    for (k = 0; k < tabla.rows.length; k++) {
+                        for (l = 0; l < tabla.rows[0].cells.length; l++) {
+                            if (k == fila && l == columna) {
+                                tabla.rows[k].cells[l].style.backgroundColor = "yellow";
+                                console.log("Pinto de amarillo.");
+                            } else {
+                                tabla.rows[k].cells[l].style.backgroundColor = "white";
+                                console.log("Pinto de blanco.");
+                            }
+                        }
+                    }
+
+
+                    // for (k = 0; k < 20; k++) {
+                    //     console.log ("Entro aquí");
+                    //     for (l = 0; l < 20; l++) {
+                    //         if (k == fila && l == columna) {
+                    //             tabla.rows[i].celdas[k].style.backgroundColor = "yellow";
+                    //             console.log("Pinto de amarillo.");
+                    //         } else {
+                    //             tabla.rows[i].celdas[k].style.backgroundColor = "white";
+                    //             console.log("Pinto de blanco.");
+                    //         }
+                    //     }
+                    // }
+            });
+        }
+      
+
+
+    </script>
+</body>
+</html>

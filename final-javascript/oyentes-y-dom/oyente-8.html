@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Celdas dinámicas </title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            width: 100px;
+            height: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var body = document.getElementsByTagName("body")[0];
+        var tabla = document.createElement("table");
+        tabla.setAttribute('id', 'tabla');
+        console.log(tabla);
+
+        for (i = 0; i < 5; i++) {
+
+            var linea = tabla.insertRow(i);
+
+            for (j = 0; j < 5; j++) {
+
+                var celda = linea.insertCell(j);
+
+            }
+        }
+
+        body.appendChild(tabla);
+
+        // make a addeventlistener for each cell and add a click event who turns the background of the cell to red
+        var celdas = document.getElementsByTagName("td");
+        for (i = 0; i < celdas.length; i++) {
+            celdas[i].addEventListener("click", () => {
+                linea.style.backgroundColor = "red";
+            });
+        }
+        
+    </script>
+</body>
+
+</html>

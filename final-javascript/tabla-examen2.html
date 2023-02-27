@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabla Examen (con id) </title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function generarTabla() {
+            var body = document.getElementsByTagName("body")[0];
+            var tabla = document.createElement("table");
+            tabla.setAttribute('id', 'tabla');
+            console.log(tabla);
+
+            var numOpciones = -1;
+            var opciones = ["Abierto 24h", "Solo mujeres", "Clases Colectivas", "Crossfit", "Artes Marciales", "Pilates"];
+
+            for (i = 0; i < 3; i++) {
+
+                var linea = tabla.insertRow(i);
+
+                for (j = 0; j < 2; j++) {
+
+                    // create a checkbox
+                    var check = document.createElement('input');
+                    check.setAttribute('type', 'checkbox');
+                    check.setAttribute('defaultchecked', '1');
+                    check.setAttribute('name', 'selecciona');
+                    
+
+                    var celda = linea.insertCell(j);
+
+                    console.log(opciones[numOpciones]);
+                    numOpciones++;
+
+                    celda.innerHTML = opciones[numOpciones];
+                    celda.appendChild(check);   
+
+                }
+            }
+            body.appendChild(tabla);
+        }
+        document.addEventListener("DOMContentLoaded", generarTabla, false);
+
+    </script>
+</body>
+</html>

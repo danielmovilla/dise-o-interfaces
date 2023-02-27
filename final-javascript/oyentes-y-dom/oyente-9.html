@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+       
+    <meta charset="UTF-8">
+       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eliminando oyentes de evento</title>
+</head>
+
+<body>
+    <textarea id='click-target' rows='5' cols='30'></textarea>
+    <div>
+        <p id='mouse-over-target'>Pasa el mouse sobre este párrafo</p>
+    </div>
+
+    <script>
+        let contador = 0;
+        var clickTarget = document.getElementById('click-target');
+        var mouseOverTarget = document.getElementById('mouse-over-target');
+
+        function clickHandler() {
+
+            var colorInicial = window.getComputedStyle( document.body ,null).getPropertyValue('background-color');  
+
+            contador++;
+
+            if (contador % 2 === 0) {
+                document.body.style.backgroundColor = "red";
+                console.log('A rojo!');
+            } else {
+                document.body.style.backgroundColor = "blue";
+                console.log('A azul!');
+            }
+            
+            console.log('Click!');
+            console.log("Color: " + colorInicial)
+            console.log("Contador: " + contador)
+        }
+
+        function mouseOverHandler() {
+            console.log('Mouse over!');
+        }
+
+        clickTarget.addEventListener('click', clickHandler);
+        mouseOverTarget.addEventListener('mouseover', mouseOverHandler);
+
+        // remove the click event listener
+        // clickTarget.removeEventListener('click', clickHandler);
+    </script>
+</body>
+
+</html>

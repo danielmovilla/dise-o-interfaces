@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        // create five inputs type checkbox with fruits names
+        <input type="checkbox" name="fruits" value="apple">Apple</input> 
+        <input type="checkbox" name="fruits" value="banana">Banana</input>
+        <input type="checkbox" name="fruits" value="orange">Orange</input>
+        <input type="checkbox" name="fruits" value="mango">Mango</input>
+        <input type="checkbox" name="fruits" value="grapes">Grapes</input>
+        <br>
+
+        // create a button to get the selected fruits
+        <button id="btn" onclick="getSelectedFruits">Get Selected Fruits</button>
+        <br>
+
+        // create a div to display the selected fruits
+        <div id="result"></div>
+        
+        <script>
+// create a function to get the selected fruits with the type checkbox not the name 
+            function getSelectedFruits() {
+                var fruits = document.getElementByType('ckeckbox');
+                var selectedFruits = [];
+                for (var i = 0; i < fruits.length; i++) {
+                    if (fruits[i].checked) {
+                        selectedFruits.push(fruits[i].value);
+                    }
+                }
+                document.getElementById('result').innerHTML = selectedFruits;
+            }
+        </script>
+    </div>
+</body>
+</html>

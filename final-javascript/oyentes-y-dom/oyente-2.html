@@ -1,0 +1,51 @@
+/* Desarrollar el código javascript que permita:
+Definir el oyente de evento para cada caja de texto de manera que permita controlar el teclado.
+Si estando en la caja Nombre, se presiona la tecla “Intro”, código ASCII 13, 
+el foco pasará a contraseña.
+Si estando en la caja Contraseña se presiona “Intro”, 
+se invocará una función llamada “Transmisión” y que lo único 
+que haga se mostrar un mensaje “Iniciando transmisión”. */
+<br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nombre, contraseña e Intro</title>
+</head>
+<body>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre">
+        <br>
+
+        <label for="contrasena"> Contraseña: </label>
+        <input type="password" id="contrasena">
+        <br>
+
+        <input type="submit" value="Enviar">
+    <script>
+        nombre.focus();
+        var vecesPulsado = 0;
+
+        nombre.addEventListener('keydown', (e) => {
+            if (e.keyCode == 13) {
+                contrasena.focus();
+            }
+        });
+
+        contrasena.addEventListener('keydown', (e) => {
+            if (e.keyCode == 13) {
+                formularito();
+            }
+        });
+        
+        function formularito () {
+            alert ("Formulario enviado");
+            console.log ("Formulario enviado");
+        }
+    </script>
+</body>
+</html>

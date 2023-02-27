@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pasar código con history. </title>
+</head>
+<body>
+    <div id="cabecera"><h2>Estudiando el BOM</h2>
+    <h3>Ejemplos JavaScript</h3></div>
+    <div style="color:blue; margin:20px;" id ="irAdelante">Ir adelante</div>
+    <div style="color:blue; margin:20px;" id ="irAtras">Ir atras </div>
+    <a href="https://www.iestetuan.es">Pulsa para generar un avance y poder volver atrás con back</a>
+    <script>
+        var irAdelante = document.getElementById("irAdelante");
+        var irAtras = document.getElementById("irAtras");
+        irAdelante.addEventListener("click", () => {
+            history.forward();
+        });
+        irAtras.addEventListener("click", () => {
+            history.back();
+        });
+    </script>
+</body>
+</html>

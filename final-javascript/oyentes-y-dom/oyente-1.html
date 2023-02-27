@@ -1,0 +1,33 @@
+
+/* Crear una página con un botón y una caja de texto.
+Definir oyente de evento click para el botón. Controlar
+ReadyStateChange del objeto Document. En la caja mostrar
+el número de veces clicadas  */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Oyente 1 </title>
+    <script>
+        document.addEventListener("readystatechange", () => {
+            console.log("DOM completamente cargado y analizado");
+        });
+    </script>
+</head>
+<body>
+    <button id="boton"> Botón </button>
+    <input type="text" id="caja">
+    <script>
+        var boton = document.getElementById("boton");
+        var caja = document.getElementById("caja");
+        var contador = 0;
+        boton.addEventListener("click", () => {
+            contador++;
+            caja.value = contador;
+        });
+    </script> 
+</body>
+</html>

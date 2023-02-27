@@ -1,0 +1,36 @@
+/* Controlar dos eventos:
+El evento de presionar la tecla y el evento de soltar la tecla.
+El presionar nos proporcionará los caracteres habituales y detectará si es un carácter especial distinto del 0 y el enter, y si es la tecla ctrl y alt.
+El evento soltar tecla controlará el shift y bloq mayus.
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Pulsa cualquier tecla</h4>
+    <label id="label"> </label>
+    <script>
+        document.addEventListener("keydown", (e) => {
+            console.log(e.key);
+            if (e.key == "Control" || e.key == "Alt") {
+                label.textContent = "Has utilizado la tecla " + e.key + ".";
+            }
+            if (e.key == "Shift" || e.key == "CapsLock") {
+                label.textContent = "Has utilizado la tecla " + e.key + ".";
+            }
+            if (e.key == "0" || e.key == "Enter") {
+                label.textContent = "Has utilizado la tecla " + e.key + ".";
+            }
+        });
+    </script>
+
+
+    
+</body>
+</html>

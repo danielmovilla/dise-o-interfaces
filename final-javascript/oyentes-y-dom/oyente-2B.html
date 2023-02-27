@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    Nombre: <input type="text"><br><br>
+    Contraseña <input type="text"><br><br>
+    Mensaje del servidor <label></label>
+
+    <script>
+        const nombre = document.getElementsByTagName('input')[0];
+        const contraseña = document.getElementsByTagName('input')[1];
+        const label = document.getElementsByTagName('label')[0];
+
+        nombre.addEventListener("keydown", cambia, true);
+        contraseña.addEventListener("keydown", transmision, true);
+
+        function cambia(e) {
+            if (e.key == 'Enter') {
+                contraseña.focus();
+            }
+        }
+
+        function transmision(e) {
+            if (e.key == 'Enter') {
+                label.textContent = "Iniciando Transmision";
+            }
+        }
+    </script>
+</body>
+</html>

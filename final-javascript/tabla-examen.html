@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabla Gimnasio </title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOM completamente cargado y analizado");
+        });
+    </script>
+</head>
+<body>
+    <script>
+
+        function genera_tabla() {
+
+            var tabla = document.createElement("table");
+            alert(tabla);
+            console.log(tabla);
+
+            var cuerpoTabla = document.createElement("tbody");
+            alert(cuerpoTabla);
+            console.log(cuerpoTabla);
+
+            var contador = 0;
+
+            var titulos = ["Amaral","Una pequeña parte del mundo","Estrella de Mar","Pájaros en la Cabeza","Gato Negro/Dragón Rojo",
+            "Hacia lo Salvaje","Nocturnal","Nocturnal Solar Sessions", "Salto al Color"];
+            tabla = document.createElement("table")
+
+            for (i = 0; i < 3; i++) {
+
+                var columna = document.createElement("tr");
+
+                for (j = 0; j < 3; j++) {
+
+                    var celda = document.createElement("td");
+                    
+                    // checkbox
+                    var check = document.createElement('input');
+                    check.setAttribute('type', 'checkbox');
+                    check.setAttribute('defaultchecked','1');
+                    check.setAttribute('name', 'selecciona');
+                    check.setAttribute('value', titulos[contador]);
+
+                    var texto = document.createTextNode(titulos[contador]);
+                    check.appendChild(texto);
+                    celda.appendChild(check);
+                    celda.appendChild(texto);
+
+                    contador++;
+
+                    columna.appendChild(celda);
+
+                }
+            }
+            
+        }
+
+        document.addEventListener("DOMContentLoaded", genera_tabla, false);
+    </script>
+</body>
+</html>
